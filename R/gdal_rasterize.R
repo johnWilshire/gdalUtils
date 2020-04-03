@@ -148,6 +148,10 @@ gdal_rasterize <- function(
 	if(verbose) message(paste("GDAL command being used:",cmd))
 	
 	cmd_output <- system(cmd,intern=TRUE) 
+	if(verbose) message('\n\n\n\n')
+	if(verbose) message(paste("GDAL command generating ouput:",cmd))
+	if(verbose) message(paste("GDAL output: ", cmd_output))
+	if(verbose) message('\n\n\n\n')
 	
 	if(output_Raster)
 	{
